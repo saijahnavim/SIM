@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>profile page</title>
+  <link rel="stylesheet" type="text/css" href="./style_p.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+  <input type = "button" value = "Log out" style="float: right;background-color: red;color: white;padding:8px;border-radius: 5px;" onclick = "signout()">
+  <div class="container">
+    <div class="profile-header">
+      <div class="profile-img">
+        <img src="pro.png" width="100" alt="">
+      </div>
+      <div class="profile-nav-info">
+        <h3 class="user-name" id="username">USERNAME</h3>
+      </div>
+    </div>
+  </div>
+  <div class="main-bd">
+    <div class="left-side">
+      <div class="profile-side">
+        <p class="moblie-no" id="mobile"><i class="fa fa-phone"></i> +91**********</p>
+        <p class="user-mail" id="email"><i class="fa fa-envelope"></i> email@gmail.com</p>
+        <div class="use-bio">
+          <h3>Bio</h3>
+          <p class="bio">student of au college of engineering.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right-side">
+    <div class="tab">
+  <button class="tablinks" onclick="openC(event, 'Academics')">Academics</button>
+  <button class="tablinks" onclick="openC(event, 'Attendance')">Attendance</button>
+  <button class="tablinks" onclick="openC(event, 'Schedules')">Schedules</button>
+</div>
+
+<div id="Academics" class="tabcontent">
+  <h1>Academics</h1>
+<table id="Mtable">
+          <tr>
+            <th>Semester No.</th>
+            <th>SGPA</th>
+            <th>CGPA</th>
+          </tr>
+        </table>
+</div>
+
+<div id="Attendance" class="tabcontent">
+  <h1>Attendance</h1>
+  <table id="Atable" style="margin-bottom: 30px;padding:10px 5px;"></table>
+</div>
+
+<div id="Schedules" class="tabcontent">
+ <h1>Schedules</h1>
+        <p>Make your schedules and view them.</p>
+        <a href="calendar.html">click here</a>
+</div>
+
+<script>
+function openC(evt, Name) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(Name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+
+
+   
+
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+  
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBLalgHdzhM12wUuceJYu3QfmujRQpcQ2o",
+      authDomain: "student-information-syst-5257b.firebaseapp.com",
+      databaseURL: "https://student-information-syst-5257b.firebaseio.com",
+      projectId: "student-information-syst-5257b",
+      storageBucket: "student-information-syst-5257b.appspot.com",
+      messagingSenderId: "519151819734",
+      appId: "1:519151819734:web:02ad6ea7fc2a943a6ae277",
+      measurementId: "G-MZNCT8N974"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <script src="./jquery/jquery.js" type="text/javascript"></script>
+  <script src="profile.js"></script>
+</body>
+
+</html>

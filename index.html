@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>student information system</title>
+<style>
+body{
+margin:0;
+padding:0;
+font-family:Poppins;
+}
+.navbar{
+position:fixed;
+display:flex;
+background-color:rgba(0,0,0,0.5);
+justify-content:center;
+align-content:center;
+flex-direction:row;
+flex-wrap:wrap;
+width:100%;
+height:70px;
+z-index:1;
+}
+.nav{
+ float:right;
+list-style:none;
+margin-top:30px;
+}
+.nav li {
+display:inline-block;
+}
+.nav li a{
+color:#fff;
+text-decoration:none;
+padding:5px 20px;
+font-family:poppins;
+font-size:16px;
+text-transform:uppercase;
+}
+.nav li a:hover{
+background:#fff;
+color:#333
+}
+.banner-area{
+position:relative;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(home.jpg);
+width:100%;
+height:100vh;
+background-repeat:no-repeat;
+-webkit-background-size:cover;
+background-size:cover;
+}
+.about-area,.service-area,.contact-area{
+position:relative;
+display:flex;
+justify-content:space-around;
+align-items:center;
+flex-wrap:wrap;
+flex-direction:row;
+width:100%;
+height:500px;
+}
+.text-part{
+width:65%;
+height:80%;
+}
+h1{
+font-size:50px;
+font-family:audiowide;
+}
+p{
+font-size:24px;
+line-height:50px;
+}
+.about-area,.contact-area{
+background:#fefefe;
+}
+.service-area{
+background:#010E39;
+color:#fff;
+}
+.logo img{
+width:100px;
+float:left;
+height:auto;
+}
+.logo h2{
+color:#fff;
+}
+.welcome-text{
+position:absolute;
+width:800px;
+height:200px;
+padding:200px 200px;
+text-align:center;
+}
+.welcome-text h1{
+text-align:center;
+padding:10px 25px;
+color:#fff;
+text-transform:uppercase;
+font-size:25px;
+}
+.welcome-text a{
+border:1px solid #fff;
+padding:10px 25px;
+text-decoration:none;
+text-transform:uppercase;
+font-size:16px;
+margin-top:20px;
+display:inline-block;
+color:#fff;
+}
+.welcome-text a:hover{
+background:#fff;
+color:#333;
+}
+html{
+scroll-behavior:smooth;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+<div class="logo">
+<img src="logo.png" alt="" align="left">
+<h2>STUDENT INFORMATION SYSTEM</h2></div>
+<ul class="nav">
+<li><a href="#home">home</a><li>
+<li><a href="#about">about</a><li>
+<li><a href="#vision">vision</a><li>
+<li><a href="#mission">mission</a><li>
+</ul></div>
+
+<div class="banner-area" id="home">
+<div class="welcome-text">
+<h1>welcome to online student proflie</h1>
+<a href="reg.html">sign up</a>        <a href="login.html">log in</a>
+</div></div>
+
+<div class="about-area" id="about">
+<div class="text-part">
+<h1><u>ABOUT</u> </h1>
+<h3>
+Andhra University is not just one of the oldest educational institutions in the country, but is also the first to be conceived as a residential and teaching-cum-affiliating University, mainly devoted to post-graduate teaching and research.
+
+The people of the State have an emotional attachment to the institution, since it came into being after a prolonged and collective struggle of the Telugu elite for a University in the educationally backward northern Circars and Ceded districts of the erstwhile Madras Presidency.
+
+Andhra University was constituted in the year 1926 by the Madras Act of 1926. The 94-year-old institution is fortunate to have Sir C.R. Reddy as its founder Vice-Chancellor, as the steps taken by this visionary proved to be fruitful in the long run.</h3>
+</div></div>
+
+<div class="service-area" id="vision">
+<div class="text-part">
+<h1><u>VISION</u></h1>
+<h3>AU will be the cradle for inventions and innovations. It will advance knowledge and scholarship to students in science, technology and liberal arts, and equip them to handle the challenges of the nation and the world in 21st century.To Create New Frontiers of Knowledge in Quest for Development of the Humane and Just Society.</h3> 
+</div></div>
+
+<div class="contact-area" id="mission">
+<div class="text-part">
+<h1><U>MISSION</U></h1>
+<h3>
+To Stimulate the academic for promotion of quality of teaching, learning and research.
+To undertake quality related reasearch studies, consultancy and trainig programmes.
+To foster global competencies among students and to inculcate value system in them;
+To promote the use of State of the Art Technology and Quest for Excellence</h3>
+</div>
+</div>
+</body>
+</html>
