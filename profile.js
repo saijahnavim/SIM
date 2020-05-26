@@ -101,7 +101,7 @@ function getAttendance() {
 }
 function signout(){
     firebase.auth().signOut().then(function() {
-        window.location.href = "home.html";
+        window.location.href = "index.html";
       }).catch(function(error) {
         // An error happened.
       });
